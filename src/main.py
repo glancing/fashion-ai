@@ -1,10 +1,11 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import cv2
 import numpy as np
-import os
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 def predictTemperature(imagePath):
   new_model = load_model('clothestemperature.h5')
