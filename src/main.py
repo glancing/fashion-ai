@@ -17,5 +17,5 @@ def predictTemperature(imagePath):
   else:
       print('Predicted for Cold temperature')
 
-predictTemperature('./images/shorts.jpeg')
+predictTemperature('./images/hoodie.jpg')
 
